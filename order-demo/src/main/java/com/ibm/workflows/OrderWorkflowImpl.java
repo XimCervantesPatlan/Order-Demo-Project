@@ -20,7 +20,7 @@ public class OrderWorkflowImpl implements OrderWorkflow{
                     .setInitialInterval(Duration.ofSeconds(60))
                     .setMaximumAttempts(4)
                     .setBackoffCoefficient(1)
-                    .setMaximumInterval(Duration.ofSeconds(30))
+                    .setMaximumInterval(Duration.ofSeconds(300))
                     .build()
                 )
                 .build();
